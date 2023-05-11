@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Name:"
+                android:hint="@string/name"
                 android:inputType="text" />
 
             <EditText
@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Mobile Number:"
+                android:hint="@string/mobile_number"
                 android:inputType="number" />
 
             <EditText
@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Group Size:"
+                android:hint="@string/group_size"
                 android:inputType="number" />
 
             <DatePicker
@@ -58,7 +58,7 @@
                 android:id="@+id/TableType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Table at smoking area?" />
+                android:text="@string/table_at_smoking_area" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -70,14 +70,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Book Now" />
+                    android:text="@string/book_now" />
 
                 <Button
                     android:id="@+id/ResetButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Reset" />
+                    android:text="@string/reset" />
             </LinearLayout>
 
 

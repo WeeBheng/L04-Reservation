@@ -61,17 +61,16 @@ public class MainActivity extends AppCompatActivity {
                 int DiningYear = DiningDate.getYear();
                 int DiningMonth = DiningDate.getMonth();
                 int DiningDay = DiningDate.getDayOfMonth();
-                Context NotificationContext = getApplicationContext();
                 String NotificationText = "Name of reservist: " + FullName + " Mobile Number: " + MobileNum + " Group size: " + GroupNum + " Booked Date: " + DiningDay+"/"+DiningMonth +"/" +DiningYear + " Booked Time: " + DiningHour + ":" + DiningMinute + " Dining Area: ";
                 int NotificationDuration = Toast.LENGTH_LONG;
                 if (!DiningArea.isChecked()){
                     String stringresponse1 = "Table at non-smoking area.";
-                    Toast toast = Toast.makeText(NotificationContext, NotificationText + stringresponse1, NotificationDuration);
+                    Toast toast = Toast.makeText(MainActivity.this, NotificationText + stringresponse1, NotificationDuration);
                     toast.show();
                 }
                 else {
                     String stringresponse2 = "Table at smoking area.";
-                    Toast toast = Toast.makeText(NotificationContext, NotificationText + stringresponse2, NotificationDuration);
+                    Toast toast = Toast.makeText(MainActivity.this, NotificationText + stringresponse2, NotificationDuration);
                     toast.show();
                 }
 
